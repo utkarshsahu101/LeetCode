@@ -45,3 +45,5 @@ Output: 3
 
 - `1 <= s.length <= 100`
 - `s` consists of lowercase English letters only
+
+[Find Most Frequent Vowel and Consonant](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/)

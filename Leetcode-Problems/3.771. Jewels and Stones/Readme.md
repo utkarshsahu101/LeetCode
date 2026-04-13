@@ -24,3 +24,5 @@ Letters are case-sensitive, so `"a"` is considered a different type of stone fro
 - `1 <= jewels.length, stones.length <= 50`
 - `jewels` and `stones` consist of only English letters.
 - All characters in `jewels` are unique.
+
+[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)
