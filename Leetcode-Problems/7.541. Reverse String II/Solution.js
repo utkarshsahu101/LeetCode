@@ -21,3 +21,4 @@ var reverseStr = function (s, k) {
 };
 
 // TC - O(n)
+// SC - O(n) (where language does not allows string mutability otherewise O(1))
