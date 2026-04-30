@@ -1,20 +1,26 @@
-Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+# Valid Anagram
 
-Example 1:
+Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `false` otherwise.
 
+## Example 1
+
+```text
 Input: s = "anagram", t = "nagaram"
-
 Output: true
+```
 
-Example 2:
+## Example 2
 
+```text
 Input: s = "rat", t = "car"
-
 Output: false
+```
 
-Constraints:
+## Constraints
 
-1 <= s.length, t.length <= 5 \* 104
-s and t consist of lowercase English letters.
+- `1 <= s.length, t.length <= 5 * 10^4`
+- `s` and `t` consist of lowercase English letters.
 
-Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
+## Follow Up
+
+What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
