@@ -21,3 +21,34 @@ var postorderTraversal = function (root) {
   traversal(root);
   return ans;
 };
+// 2nd approach - using 2 stack to traverse the binary tree iteratively and storing the answer in the array
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {number[]}
+ */
+var postorderTraversal = function (root) {
+  if (!root) return [];
+  let s1 = [root];
+  let s2 = [];
+  while (s1.length) {
+    let curr = s1.pop();
+    s2.push(curr);
+    curr?.left && s1.push(curr.left);
+    curr?.right && s1.push(curr.right);
+  }
+  let ans = [];
+  while (s2.length) {
+    ans.push(s2.pop().val);
+  }
+  return ans;
+};
+// TC - O(n) for traversing all the nodes in the binary tree
+// SC - O(n) for storing the answer in the array and O(h) for the stack space where h is the height of the binary tree
